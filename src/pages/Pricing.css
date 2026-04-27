@@ -1,0 +1,68 @@
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 80px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.custom-table th, .custom-table td {
+  padding: 25px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.custom-table th {
+  background-color: var(--primary-navy);
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+.size-label {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--primary-navy);
+}
+
+.price-val {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #d32f2f;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.option-item {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  border-top: 4px solid var(--accent-yellow);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.option-item h3 {
+  margin-bottom: 15px;
+}
+
+.option-price {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: var(--primary-navy);
+}
+
+@media (max-width: 768px) {
+  .option-grid {
+    grid-template-columns: 1fr;
+  }
+}

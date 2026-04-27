@@ -1,0 +1,58 @@
+:root {
+  --primary-navy: #001A3D;
+  --accent-yellow: #FFD700;
+  --text-dark: #333333;
+  --text-light: #FFFFFF;
+  --bg-light: #F8F9FA;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 共通ボタンスタイル */
+.btn-primary {
+  background-color: var(--accent-yellow);
+  color: var(--primary-navy);
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
