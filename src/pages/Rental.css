@@ -1,0 +1,120 @@
+.rental-page {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.rental-hero {
+  background: linear-gradient(rgba(0, 26, 61, 0.8), rgba(0, 26, 61, 0.8)), url('https://images.unsplash.com/photo-1541899481282-d53bffe3c15d?auto=format&fit=crop&q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.rental-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.rental-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.price-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.price-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-header {
+  background-color: var(--primary-navy);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.price-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.price-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-navy);
+  margin-bottom: 10px;
+}
+
+.price-unit {
+  font-size: 1rem;
+  color: #666;
+}
+
+.shop-info-section {
+  padding: 80px 0;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table th, .info-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.info-table th {
+  width: 30%;
+  color: var(--primary-navy);
+}
+
+.map-container {
+  height: 400px;
+  background-color: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+  .rental-hero h1 {
+    font-size: 2rem;
+  }
+}

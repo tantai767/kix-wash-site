@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Clock, Shield } from 'lucide-react';
+import { ArrowRight, CheckCircle, Clock, Shield, Key } from 'lucide-react';
 import './Home.css';
 
 const Home = () => {
@@ -33,7 +33,7 @@ const Home = () => {
       {/* 特徴セクション */}
       <section className="features section-padding">
         <div className="container">
-          <h2 className="section-title">KIX Waterless Wash が選ばれる理由</h2>
+          <h2 className="section-title">X car wash が選ばれる理由</h2>
           <div className="feature-grid">
             <div className="feature-card">
               <Clock className="feature-icon" size={40} />
@@ -49,6 +49,24 @@ const Home = () => {
               <CheckCircle className="feature-icon" size={40} />
               <h3>空港公認（予定）の安心感</h3>
               <p>駐車場内での作業許可を得たプロのスタッフが、責任を持って作業いたします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* レンタカー誘導セクション */}
+      <section className="rental-banner section-padding">
+        <div className="container">
+          <div className="rental-banner-content">
+            <div className="rental-banner-text">
+              <h2>格安レンタカーも提供中</h2>
+              <p>24時間2,000円〜の地域最安値クラス！<br />旅行やビジネスに、安心・安全な X RENTACAR をぜひご利用ください。</p>
+              <Link to="/rental" className="btn-primary">
+                レンタカーの詳細を見る <ArrowRight size={20} />
+              </Link>
+            </div>
+            <div className="rental-banner-image">
+              <Key size={80} color="#001a3d" opacity={0.2} />
             </div>
           </div>
         </div>

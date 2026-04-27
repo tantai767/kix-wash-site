@@ -7,7 +7,7 @@ const Service = () => {
       <section className="page-header">
         <div className="container">
           <h1>サービス紹介</h1>
-          <p>KIX Waterless Wash が提供する次世代の洗車体験</p>
+          <p>X car wash が提供する次世代の洗車体験</p>
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Car, Calendar, Mail, HelpCircle, DollarSign, Menu, X } from 'lucide-react';
+import { Car, Calendar, Mail, HelpCircle, DollarSign, Menu, X, Key } from 'lucide-react';
 import { useState } from 'react';
 import './Header.css';
 
@@ -12,7 +12,7 @@ const Header = () => {
         <Link to="/" className="logo">
           <Car size={32} color="#FFD700" />
           <div className="logo-text">
-            <span className="logo-main">KIX Waterless Wash</span>
+            <span className="logo-main">X car wash</span>
             <span className="logo-sub">関西国際空港 無水洗車サービス</span>
           </div>
         </Link>
@@ -23,6 +23,12 @@ const Header = () => {
               <Link to="/service" className="nav-item" onClick={() => setIsOpen(false)}>
                 <Car size={18} />
                 <span>サービス</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/rental" className="nav-item" onClick={() => setIsOpen(false)}>
+                <Key size={18} />
+                <span>レンタカー</span>
               </Link>
             </li>
             <li>

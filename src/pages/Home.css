@@ -2,7 +2,7 @@
   position: relative;
   height: 80vh;
   min-height: 500px;
-  background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&q=80&w=2070'); /* KIXイメージ（飛行機・空港） */
+  background-image: url('https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=2070'); /* 関西国際空港イメージ */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -113,10 +113,16 @@
   background-color: var(--primary-navy);
 }
 
+.text-light {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
 .flow-steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  margin-top: 40px;
 }
 
 .flow-step {
@@ -124,10 +130,57 @@
 }
 
 .step-num {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.1);
-  margin-bottom: -20px;
+  color: #FFD700; /* 完全に不透明なゴールドイエローに */
+  margin-bottom: 5px;
+  display: block;
+}
+
+.flow-step h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.flow-step p {
+  color: #f0f0f0 !important;
+  line-height: 1.6;
+  font-size: 1.1rem; /* 文字を少し大きく */
+  opacity: 1 !important;
+}
+
+.rental-banner {
+  background: linear-gradient(rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.1));
+  border-top: 1px solid var(--accent-yellow);
+  border-bottom: 1px solid var(--accent-yellow);
+}
+
+.rental-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.rental-banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primary-navy);
+}
+
+.rental-banner-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .rental-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
