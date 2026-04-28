@@ -54,24 +54,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* レンタカー誘導セクション */}
-      <section className="rental-banner section-padding">
-        <div className="container">
-          <div className="rental-banner-content">
-            <div className="rental-banner-text">
-              <h2>格安レンタカーも提供中</h2>
-              <p>24時間2,000円〜の地域最安値クラス！<br />旅行やビジネスに、安心・安全な X RENTACAR をぜひご利用ください。</p>
-              <Link to="/rental" className="btn-primary">
-                レンタカーの詳細を見る <ArrowRight size={20} />
-              </Link>
-            </div>
-            <div className="rental-banner-image">
-              <Key size={80} color="#001a3d" opacity={0.2} />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* フローセクション */}
       <section className="flow section-padding bg-navy">
         <div className="container">
@@ -80,7 +62,7 @@ const Home = () => {
             <div className="flow-step">
               <div className="step-num">01</div>
               <h4 className="text-yellow">ネットで予約</h4>
-              <p className="text-light">予約フォームから日程と車種、駐車場所を選択。</p>
+              <p className="text-light">予約フォームから日程と車種, 駐車場所を選択。</p>
             </div>
             <div className="flow-step">
               <div className="step-num">02</div>
@@ -96,6 +78,24 @@ const Home = () => {
               <div className="step-num">04</div>
               <h4 className="text-yellow">綺麗な車で帰宅</h4>
               <p className="text-light">到着後、輝く車に乗ってそのまま帰宅いただけます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* レンタカー誘導セクション */}
+      <section className="rental-banner section-padding">
+        <div className="container">
+          <div className="rental-banner-content">
+            <div className="rental-banner-text">
+              <h2>格安レンタカーも提供中</h2>
+              <p>24時間2,000円〜の地域最安値クラス！<br />旅行やビジネスに、安心・安全な X RENTACAR をぜひご利用ください。</p>
+              <Link to="/rental" className="btn-primary">
+                レンタカーの詳細を見る <ArrowRight size={20} />
+              </Link>
+            </div>
+            <div className="rental-banner-image">
+              <Key size={80} color="#001a3d" opacity={0.2} />
             </div>
           </div>
         </div>
