@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-brand">
           <div className="logo">
             <Car size={24} color="#FFD700" />
-            <span className="logo-main">X car wash</span>
+            <span className="logo-main">X Car Wash</span>
           </div>
           <p className="footer-desc">
             関西国際空港の駐車場で、旅の間に車を綺麗にする。
@@ -21,7 +21,6 @@ const Footer = () => {
           <h4>クイックリンク</h4>
           <ul>
             <li><Link to="/service">サービス紹介</Link></li>
-            <li><Link to="/rental">レンタカー</Link></li>
             <li><Link to="/pricing">料金表</Link></li>
             <li><Link to="/faq">よくある質問</Link></li>
             <li><Link to="/reservation">ネット予約</Link></li>
@@ -37,7 +36,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="container">
-          <p>&copy; 2026 X car wash. All Rights Reserved.</p>
+          <p>&copy; 2026 X Car Wash. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

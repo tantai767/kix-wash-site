@@ -3,7 +3,7 @@
   height: 80vh;
   min-height: 500px;
   background-color: #001a3d;
-  background-image: linear-gradient(rgba(0, 26, 61, 0.5), rgba(0, 26, 61, 0.3)), url('https://images.unsplash.com/photo-1605640840605-14ac1855827b?q=80&w=2071'); /* 関空連絡橋（スカイゲートブリッジ）のイメージ */
+  background-image: linear-gradient(rgba(0, 26, 61, 0.5), rgba(0, 26, 61, 0.3)), url('https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=2070');
   background-size: cover;
   background-position: center;
   display: flex;

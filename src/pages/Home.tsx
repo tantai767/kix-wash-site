@@ -33,7 +33,7 @@ const Home = () => {
       {/* 特徴セクション */}
       <section className="features section-padding">
         <div className="container">
-          <h2 className="section-title">X car wash が選ばれる理由</h2>
+          <h2 className="section-title">X Car Wash が選ばれる理由</h2>
           <div className="feature-grid">
             <div className="feature-card">
               <Clock className="feature-icon" size={40} />
@@ -62,7 +62,7 @@ const Home = () => {
             <div className="flow-step">
               <div className="step-num">01</div>
               <h4 className="text-yellow">ネットで予約</h4>
-              <p className="text-light">予約フォームから日程と車種, 駐車場所を選択。</p>
+              <p className="text-light">予約フォームから日程と車種、駐車場所を選択。</p>
             </div>
             <div className="flow-step">
               <div className="step-num">02</div>

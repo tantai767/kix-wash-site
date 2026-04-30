@@ -1,5 +1,7 @@
-import { Check, Droplet, Sparkles, Leaf } from 'lucide-react';
+import { Check, Droplet, Sparkles, Leaf, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Service.css';
+import './Home.css';
 
 const Service = () => {
   return (
@@ -7,7 +9,7 @@ const Service = () => {
       <section className="page-header">
         <div className="container">
           <h1>サービス紹介</h1>
-          <p>X car wash が提供する次世代の洗車体験</p>
+          <p>X Car Wash が提供する次世代の洗車体験</p>
         </div>
       </section>
 
@@ -19,8 +21,8 @@ const Service = () => {
           <div className="service-text">
             <h2>水を一切使わない、<br /><span className="text-navy">「無水洗車」のテクノロジー</span></h2>
             <p>
-              私たちの洗車は、バケツ一杯の水も使いません。
-              独自開発された高分子洗浄剤が汚れを包み込み、浮かせた状態で専用のマイクロファイバークロスで優しく拭き取ります。
+              私たちの洗車は, バケツ一杯の水も使いません。
+              独自開発された高分子洗浄剤が汚れを包み込み, 浮かせた状態で専用のマイクロファイバークロスで優しく拭き取ります。
             </p>
             <ul className="benefit-list">
               <li><Check className="text-yellow" /> <strong>傷がつかない:</strong> 汚れを粒子レベルで包み込むため、摩擦を最小限に抑えます。</li>
@@ -49,6 +51,21 @@ const Service = () => {
               <Leaf size={48} className="merit-icon" />
               <h3>エコフレンドリー</h3>
               <p>1回の洗車で節約できる水は約200リットル。地球に優しい選択です。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* レンタカー誘導セクション */}
+      <section className="rental-banner section-padding">
+        <div className="container">
+          <div className="rental-banner-content">
+            <div className="rental-banner-text">
+              <h2>格安レンタカーも提供中</h2>
+              <p>24時間2,000円〜の地域最安値クラス！<br />旅行やビジネスに、安心・安全な X RENTACAR をぜひご利用ください。</p>
+              <Link to="/rental" className="btn-primary">
+                レンタカーの詳細を見る <ArrowRight size={20} />
+              </Link>
             </div>
           </div>
         </div>

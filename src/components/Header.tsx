@@ -11,25 +11,25 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
-        <div className="logo-section">
-          <Link to={isRental ? "/rental" : "/"} className="logo">
+        <div className="logo-group">
+          <Link to="/" className="logo">
             <Car size={32} color="#FFD700" />
             <div className="logo-text">
-              <span className="logo-main">{isRental ? 'X RENTACAR' : 'X car wash'}</span>
-              <span className="logo-sub">{isRental ? '関西国際空港 レンタカーサービス' : '関西国際空港 無水洗車サービス'}</span>
+              <span className="logo-main">{isRental ? 'X RENTACAR' : 'X Car Wash'}</span>
+              <span className="logo-sub">{isRental ? '格安レンタカーサービス' : '関西国際空港 無水洗車サービス'}</span>
             </div>
           </Link>
-          
-          <div className="service-switcher">
-            <Link to="/" className={`nav-item service-tab ${!isRental ? 'active' : ''}`}>
+          {isRental ? (
+            <Link to="/" className="rental-switch">
               <Car size={16} />
-              <span>洗車</span>
+              <span>X Car Wash</span>
             </Link>
-            <Link to="/rental" className={`nav-item service-tab ${isRental ? 'active' : ''}`}>
+          ) : (
+            <Link to="/rental" className="rental-switch">
               <Key size={16} />
               <span>レンタカー</span>
             </Link>
-          </div>
+          )}
         </div>
 
         <nav className={`nav ${isOpen ? 'is-open' : ''}`}>
