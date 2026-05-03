@@ -62,22 +62,34 @@ const Home = () => {
             <div className="flow-step">
               <div className="step-num">01</div>
               <h4 className="text-yellow">ネットで予約</h4>
-              <p className="text-light">予約フォームから日程と車種、駐車場所を選択。</p>
+              <p className="text-light">
+                予約フォームから<br />
+                日程・車種・駐車場所を選択。
+              </p>
             </div>
             <div className="flow-step">
               <div className="step-num">02</div>
               <h4 className="text-yellow">空港に駐車</h4>
-              <p className="text-light">通常通り関空の駐車場へ。そのまま出発！</p>
+              <p className="text-light">
+                通常通り関空の駐車場へ。<br />
+                そのまま出発いただけます！
+              </p>
             </div>
             <div className="flow-step">
               <div className="step-num">03</div>
               <h4 className="text-yellow">プロの洗車</h4>
-              <p className="text-light">ご不在の間に、私たちが真心込めて洗車します。</p>
+              <p className="text-light">
+                お客様のご不在の間に、<br />
+                私たちが真心込めて洗車します。
+              </p>
             </div>
             <div className="flow-step">
               <div className="step-num">04</div>
               <h4 className="text-yellow">綺麗な車で帰宅</h4>
-              <p className="text-light">到着後、輝く車に乗ってそのまま帰宅いただけます。</p>
+              <p className="text-light">
+                到着後、輝く車に乗って<br />
+                そのまま帰宅いただけます。
+              </p>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Service from './pages/Service';
+import Solution from './pages/Solution';
 import Rental from './pages/Rental';
 import Pricing from './pages/Pricing';
 import FAQ from './pages/FAQ';
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/service" element={<Service />} />
+            <Route path="/solution" element={<Solution />} />
             <Route path="/rental" element={<Rental />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/faq" element={<FAQ />} />

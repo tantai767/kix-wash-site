@@ -34,11 +34,19 @@ const Header = () => {
 
         <nav className={`nav ${isOpen ? 'is-open' : ''}`}>
           <ul className="nav-list">
-            <li>
-              <Link to="/service" className="nav-item" onClick={() => setIsOpen(false)}>
+            <li className="nav-item-container">
+              <div className="nav-item service-dropdown-trigger">
                 <Car size={18} />
                 <span>サービス</span>
-              </Link>
+              </div>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/service" onClick={() => setIsOpen(false)}>洗車内容</Link>
+                </li>
+                <li>
+                  <Link to="/solution" onClick={() => setIsOpen(false)}>無水洗車専用の溶剤</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to="/pricing" className="nav-item" onClick={() => setIsOpen(false)}>

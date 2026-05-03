@@ -86,6 +86,47 @@
   color: var(--accent-yellow);
 }
 
+/* ドロップダウンメニューのスタイル */
+.nav-item-container {
+  position: relative;
+}
+
+.service-dropdown-trigger {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--primary-navy);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 10px 0;
+  list-style: none;
+  display: none;
+  z-index: 1001;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--text-light);
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: var(--accent-yellow);
+}
+
+.nav-item-container:hover .dropdown-menu {
+  display: block;
+}
+
 .reservation-btn {
   background-color: var(--accent-yellow);
   color: var(--primary-navy);
@@ -142,5 +183,24 @@
     padding: 15px;
     font-size: 1.1rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* モバイル時のドロップダウン調整 */
+  .nav-item-container:hover .dropdown-menu {
+    display: none; /* ホバー動作を無効化 */
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: none;
+    border: none;
+    min-width: 0;
+    padding: 0 0 0 20px;
+  }
+
+  .dropdown-menu li a {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
   }
 }
