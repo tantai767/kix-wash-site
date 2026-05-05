@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ExternalLink } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import './Pricing.css';
 import './Rental.css';
 
@@ -46,15 +46,13 @@ const RentalPricing = () => {
           <p style={{marginTop: '20px', color: '#666', textAlign: 'center'}}>※上記料金は消費税、保険料込みの価格です。</p>
 
           <div style={{marginTop: '50px', textAlign: 'center'}}>
-            <a 
-              href="https://guts-rentacar.com/shop/osaka/rinkuizumisano/" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link 
+              to="/rental/reservation" 
               className="btn-primary"
               style={{display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '15px 40px', fontSize: '1.2rem'}}
             >
-              空車確認・ご予約はこちら <ExternalLink size={20} />
-            </a>
+              空車確認・ご予約はこちら <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
