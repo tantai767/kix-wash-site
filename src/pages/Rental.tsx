@@ -48,6 +48,11 @@ const Rental = () => {
             </div>
           </div>
           <p style={{textAlign: 'center', marginTop: '30px', color: '#666'}}>※A-1クラス（軽自動車・2ドア等）の料金です。保険料・消費税込み。</p>
+          <div style={{textAlign: 'center', marginTop: '20px'}}>
+            <Link to="/rental/pricing" className="btn-outline" style={{padding: '10px 30px'}}>
+              料金表を詳しく見る <ArrowRight size={18} />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -78,15 +83,9 @@ const Rental = () => {
                 </tbody>
               </table>
               <div style={{marginTop: '30px'}}>
-                <a 
-                  href="https://guts-rentacar.com/shop/osaka/rinkuizumisano/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-primary"
-                  style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}
-                >
-                  空車確認・ご予約はこちら <ExternalLink size={18} />
-                </a>
+                <Link to="/rental/reservation" className="btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}>
+                  空車確認・ご予約はこちら <ArrowRight size={18} />
+                </Link>
               </div>
             </div>
             <div className="shop-map">

@@ -6,13 +6,13 @@ import './Header.css';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const isRental = location.pathname === '/rental';
+  const isRental = location.pathname.startsWith('/rental');
 
   return (
     <header className="header">
       <div className="container header-container">
         <div className="logo-group">
-          <Link to="/" className="logo">
+          <Link to={isRental ? "/rental" : "/"} className="logo">
             <Car size={32} color="#FFD700" />
             <div className="logo-text">
               <span className="logo-main">{isRental ? 'X RENTACAR' : 'X Car Wash'}</span>
@@ -34,38 +34,49 @@ const Header = () => {
 
         <nav className={`nav ${isOpen ? 'is-open' : ''}`}>
           <ul className="nav-list">
-            <li className="nav-item-container">
-              <div className="nav-item service-dropdown-trigger">
-                <Car size={18} />
-                <span>サービス</span>
-              </div>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to="/service" onClick={() => setIsOpen(false)}>洗車内容</Link>
-                </li>
-                <li>
-                  <Link to="/solution" onClick={() => setIsOpen(false)}>無水洗車専用の溶剤</Link>
-                </li>
-              </ul>
-            </li>
+            {!isRental && (
+              <li className="nav-item-container">
+                <div className="nav-item service-dropdown-trigger">
+                  <Car size={18} />
+                  <span>サービス</span>
+                </div>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link to="/service" onClick={() => setIsOpen(false)}>洗車内容</Link>
+                  </li>
+                  <li>
+                    <Link to="/solution" onClick={() => setIsOpen(false)}>無水洗車専用の溶剤</Link>
+                  </li>
+                </ul>
+              </li>
+            )}
             <li>
-              <Link to="/pricing" className="nav-item" onClick={() => setIsOpen(false)}>
+              <Link to={isRental ? "/rental/pricing" : "/pricing"} className="nav-item" onClick={() => setIsOpen(false)}>
                 <DollarSign size={18} />
                 <span>料金表</span>
               </Link>
             </li>
             <li>
-              <Link to="/faq" className="nav-item" onClick={() => setIsOpen(false)}>
+              <Link to={isRental ? "/rental/faq" : "/faq"} className="nav-item" onClick={() => setIsOpen(false)}>
                 <HelpCircle size={18} />
                 <span>Q&A</span>
               </Link>
             </li>
-            <li>
-              <Link to="/reservation" className="nav-item reservation-btn" onClick={() => setIsOpen(false)}>
-                <Calendar size={18} />
-                <span>ネット予約</span>
-              </Link>
-            </li>
+            {!isRental ? (
+              <li>
+                <Link to="/reservation" className="nav-item reservation-btn" onClick={() => setIsOpen(false)}>
+                  <Calendar size={18} />
+                  <span>ネット予約</span>
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <Link to="/rental/reservation" className="nav-item reservation-btn" onClick={() => setIsOpen(false)}>
+                  <Calendar size={18} />
+                  <span>空車確認</span>
+                </Link>
+              </li>
+            )}
             <li>
               <Link to="/contact" className="nav-item contact-btn" onClick={() => setIsOpen(false)}>
                 <Mail size={18} />
