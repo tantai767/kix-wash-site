@@ -1,4 +1,4 @@
-import { Check, Droplet, Sparkles, Leaf, ArrowRight } from 'lucide-react';
+import { Check, Droplet, Sparkles, Leaf, ArrowRight, Shield, Zap, Globe, Recycle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './Service.css';
 import './Home.css';
@@ -8,7 +8,7 @@ const Service = () => {
     <div className="service-page">
       <section className="page-header">
         <div className="container">
-          <h1>サービス紹介</h1>
+          <h1>洗車内容</h1>
           <p>X Car Wash が提供する次世代の洗車体験</p>
         </div>
       </section>
@@ -21,13 +21,13 @@ const Service = () => {
           <div className="service-text">
             <h2>水を一切使わない、<br /><span className="text-navy">「無水洗車」のテクノロジー</span></h2>
             <p>
-              私たちの洗車は, バケツ一杯の水も使いません。
-              独自開発された高分子洗浄剤が汚れを包み込み, 浮かせた状態で専用のマイクロファイバークロスで優しく拭き取ります。
+              私たちの洗車は、バケツ一杯の水も使いません。
+              天然成分100%の独自開発された洗浄剤が汚れを包み込み、浮かせた状態で専用の高密度クロスで優しく拭き取ります。
             </p>
             <ul className="benefit-list">
-              <li><Check className="text-yellow" /> <strong>傷がつかない:</strong> 汚れを粒子レベルで包み込むため、摩擦を最小限に抑えます。</li>
-              <li><Check className="text-yellow" /> <strong>環境に優しい:</strong> 排水を出さないため、空港の環境を汚しません。</li>
-              <li><Check className="text-yellow" /> <strong>持続する輝き:</strong> 洗浄と同時に高級ワックスコーティングを施します。</li>
+              <li><Check className="text-yellow" /> <strong>傷がつかない:</strong> 汚れを粒子レベルで包み込み、繊維の奥にキャッチするため摩擦を最小限に抑えます。</li>
+              <li><Check className="text-yellow" /> <strong>環境に優しい:</strong> 汚水排水ゼロ。コップ1杯程度の水（クロスの湿潤用）のみを使用します。</li>
+              <li><Check className="text-yellow" /> <strong>圧倒的な艶:</strong> 天然成分のワックスにより、洗うたびに深みのある艶が増し、汚れが付きにくくなります。</li>
             </ul>
           </div>
         </div>
@@ -49,15 +49,25 @@ const Service = () => {
             </div>
             <div className="merit-card">
               <Leaf size={48} className="merit-icon" />
-              <h3>エコフレンドリー</h3>
-              <p>1回の洗車で節約できる水は約200リットル。地球に優しい選択です。</p>
+              <h3>待ち時間ゼロ</h3>
+              <p>ご旅行や出張の出発前に預けるだけ。到着時にはプロが磨き上げた車がお迎えします。</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* 次のページへのリンク */}
+      <section className="next-page-link section-padding text-center">
+        <div className="container">
+          <p className="mb-3">私たちのこだわりを、もっと詳しく</p>
+          <Link to="/washing-flow" className="btn-outline">
+            洗車の流れを見る <ArrowRight size={20} />
+          </Link>
+        </div>
+      </section>
+
       {/* レンタカー誘導セクション */}
-      <section className="rental-banner section-padding">
+      <section className="rental-banner section-padding bg-gray">
         <div className="container">
           <div className="rental-banner-content">
             <div className="rental-banner-text">

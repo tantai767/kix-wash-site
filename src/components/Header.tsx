@@ -45,7 +45,13 @@ const Header = () => {
                     <Link to="/service" onClick={() => setIsOpen(false)}>洗車内容</Link>
                   </li>
                   <li>
+                    <Link to="/washing-flow" onClick={() => setIsOpen(false)}>洗車の流れ</Link>
+                  </li>
+                  <li>
                     <Link to="/solution" onClick={() => setIsOpen(false)}>無水洗車専用の溶剤</Link>
+                  </li>
+                  <li>
+                    <Link to="/sdgs" onClick={() => setIsOpen(false)}>SDGsへの取り組み</Link>
                   </li>
                 </ul>
               </li>
