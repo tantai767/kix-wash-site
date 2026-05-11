@@ -1,4 +1,5 @@
-import { Globe, Recycle, Leaf, Check } from 'lucide-react';
+import { Globe, Recycle, Leaf, Check, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Service.css'; // 再利用可能なスタイル
 import './Home.css';
 
@@ -80,6 +81,13 @@ const SDGs = () => {
               <div className="target-card"><strong>⑮ 陸上資源</strong>：陸上生態系の保護</div>
               <div className="target-card"><strong>⑰ 実施手段</strong>：パートナーシップによる推進</div>
             </div>
+          </div>
+
+          <div className="cta-section text-center" style={{marginTop: '40px'}}>
+            <p className="mb-4">環境に優しい洗車で、あなたの愛車も地球も美しく。</p>
+            <Link to="/reservation" className="btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}>
+              今すぐネット予約する <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>

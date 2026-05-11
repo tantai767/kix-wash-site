@@ -133,18 +133,14 @@ const Solution = () => {
       </section>
 
       {/* 次のページへのリンク */}
-      <section className="next-page-link section-padding text-center">
+      <section className="cta-section section-padding text-center">
         <div className="container">
-          <p className="mb-3">地球の未来のために、私たちができること</p>
-          <Link to="/sdgs" className="btn-outline">
+          <p className="mb-4">地球の未来のために、私たちができること</p>
+          <Link to="/sdgs" className="btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}>
             SDGsへの取り組みを見る <ArrowRight size={20} />
           </Link>
         </div>
       </section>
-
-      <div className="cta-section section-padding text-center">
-        <Link to="/service" className="btn-primary">洗車内容・料金を見る</Link>
-      </div>
     </div>
   );
 };

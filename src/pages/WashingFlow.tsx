@@ -108,14 +108,15 @@ const WashingFlow = () => {
       </section>
 
       {/* 次のページへのリンク */}
-      <section className="next-page-link section-padding text-center">
+      <section className="cta-section section-padding text-center">
         <div className="container">
-          <p className="mb-3">輝きを支える、こだわりの溶剤</p>
-          <Link to="/solution" className="btn-outline">
+          <p className="mb-4">輝きを支える、こだわりの溶剤</p>
+          <Link to="/solution" className="btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}>
             無水洗車専用の溶剤を見る <ArrowRight size={20} />
           </Link>
         </div>
       </section>
+
 
       <section className="tech-commitment section-padding">
         <div className="container">

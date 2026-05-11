@@ -95,7 +95,18 @@ const Home = () => {
         </div>
       </section>
 
+      {/* 洗車サービス詳細へのリンク */}
+      <section className="cta-section section-padding text-center bg-gray">
+        <div className="container">
+          <p className="mb-4">まずは X Car Wash のこだわりをチェック</p>
+          <Link to="/service" className="btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}>
+            洗車内容を見る <ArrowRight size={20} />
+          </Link>
+        </div>
+      </section>
+
       {/* レンタカー誘導セクション */}
+
       <section className="rental-banner section-padding">
         <div className="container">
           <div className="rental-banner-content">

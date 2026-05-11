@@ -56,3 +56,20 @@ button {
   filter: brightness(1.1);
   transform: translateY(-2px);
 }
+
+.btn-outline-navy {
+  border: 2px solid var(--primary-navy);
+  color: var(--primary-navy);
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--primary-navy);
+  color: var(--text-light);
+}

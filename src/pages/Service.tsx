@@ -57,10 +57,10 @@ const Service = () => {
       </section>
 
       {/* 次のページへのリンク */}
-      <section className="next-page-link section-padding text-center">
+      <section className="cta-section section-padding text-center">
         <div className="container">
-          <p className="mb-3">私たちのこだわりを、もっと詳しく</p>
-          <Link to="/washing-flow" className="btn-outline">
+          <p className="mb-4">私たちのこだわりを、もっと詳しく</p>
+          <Link to="/washing-flow" className="btn-primary" style={{display: 'inline-flex', alignItems: 'center', gap: '8px'}}>
             洗車の流れを見る <ArrowRight size={20} />
           </Link>
         </div>
