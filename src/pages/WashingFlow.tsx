@@ -18,7 +18,7 @@ const WashingFlow = () => {
           <div className="section-intro text-center mb-5">
             <h2>独自の4ステップ・プロフェッショナル施工</h2>
             <p className="mt-3">
-              クイックウォッシュの洗車は、単に汚れを落とすだけではありません。<br />
+              X Car Wash の洗車は、単に汚れを落とすだけではありません。<br />
               お車へのダメージを最小限に抑え、手洗いならではの細やかな気配りで、新車のような輝きを取り戻します。
             </p>
           </div>

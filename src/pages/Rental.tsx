@@ -43,7 +43,7 @@ const Rental = () => {
               </div>
               <div className="price-body">
                 <div className="price-amount">24,800<span className="price-unit">円〜</span></div>
-                <p>代車や長期出張に最適。<br />1日あたり約800円의衝撃価格！</p>
+                <p>代車や長期出張に最適。<br />1日あたり約800円の衝撃価格！</p>
               </div>
             </div>
           </div>
